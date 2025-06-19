@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Essential Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO Meta -->
+  <title>codewithw3s – Frontend Developer Portfolio</title>
+  <meta name="title" content="codewithw3s – Frontend Developer Portfolio" />
+  <meta name="description" content="Frontend developer & creative designer. Explore responsive websites, live projects, and blogs." />
+  <meta name="keywords" content="Frontend Developer, HTML, CSS, JavaScript, React, Portfolio, Web Designer, Web Developer India" />
+  <meta name="author" content="codewithw3s" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://codewithw3s.in/" />
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icons/icon-192.png" />
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./icon.png" />
+  <link rel="apple-touch-icon" href="./icon.png" />
+  <link rel="shortcut icon" href="./icon.png" type="image/png" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codewithw3s.in/" />
+  <meta property="og:title" content="codewithw3s – Frontend Developer" />
+  <meta property="og:description" content="Explore modern web development projects and portfolio of codewithw3s." />
+  <meta property="og:image" content="https://codewithw3s.in/preview.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="codewithw3s – Frontend Developer" />
+  <meta property="twitter:description" content="Frontend developer portfolio with responsive and fast web apps." />
+  <meta property="twitter:image" content="https://codewithw3s.in/preview.jpg" />
+
+  <!-- Google Site Verification (after Search Console setup) -->
+  <!-- <meta name="google-site-verification" content="your-verification-code-here" /> -->
+
+  <!-- Theme & Manifest -->
+  <meta name="theme-color" content="#2222F8FF" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+
+<body>
+  <!-- Skip Navigation Link for Accessibility -->
+  <!-- <a href="#main" class="skip-link">Skip to main content</a> -->
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen" role="status" aria-live="polite">
+  <div class="loader" aria-label="Loading content"></div>
+</div>
+
+
+  <!-- Main Header -->
+  <header role="banner">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <!-- Logo/Brand -->
+        <a href="" class="logo" aria-label="codewithw3s - Go to homepage">
+          codewithw3s
+        </a>
+
+        <!-- Main Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+          <li role="listitem">
+            <a href="#home" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li role="listitem">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li role="listitem">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li role="listitem">
+            <a href="#certifications" class="nav-link">Certifications</a>
+          </li>
+          <li role="listitem">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Navigation Actions -->
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle between light and dark theme">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </button>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile navigation menu" aria-expanded="false">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+
+
+  <div id="cursor" class="cursor" aria-hidden="true"></div>
+
+
+  <main id="main" role="main">
+    
+       <!-- ==== Hero Section ==== -->
+  <section class="section hero-section" id="home" aria-labelledby="hero-heading">
+    <div class="hero-container">
+      <!-- Left: Text -->
+      <div class="hero-content" data-aos="fade-up">
+      
+          <h1 class="intro">Hi, I'm <span class="name">SUMIT KUMAR</span></h1>
+          <h1 id="hero-heading" class="hero-title">
+            <span id="element"></span>
+            <!-- I'm a <span id="typed-text"></span><span class="cursor"></span> -->
+        </h1>
+        <p class="hero-subtitle">
+           I love building beautiful, responsive, and easy-to-use websites using the latest web
+                        technologies. I'm passionate about writing clean code, designing with purpose, and creating
+                        digital experiences that actually make a difference.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+
+      <!-- Right: Image -->
+      <div class="hero-image" data-aos="fade-left">
+        <img src="home.png"
+             loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" id="about-heading" data-aos="fade-up">About Me</h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+            Passionate about creating exceptional digital experiences
+          </p>
+        </header>
+
+        <div class="about-content">
+          <!-- Profile Image -->
+          <div class="about-image" data-aos="fade-right">
+            <div class="about-image-wrapper">
+              <div class="about-image-inner">
+                <img src="about.jpg" alt="Portrait of codewithw3s, Frontend Developer" class="about-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- About Text and Skills -->
+          <div class="about-text" data-aos="fade-left" data-aos-delay="200">
+            <p>
+              I'm a Frontend Developer who's passionate about building modern, engaging websites. I enjoy
+              turning complex ideas into simple, beautiful, and user-friendly solutions. My focus is
+              always on creating digital experiences that are not just visually appealing, but also
+              functional, fast, and accessible to everyone.
+            </p>
+
+            <!-- Skills Grid -->
+            <div class="skills-grid" role="list" aria-label="Technical skills">
+              <div class="skill-item" data-aos="zoom-in" data-aos-delay="300" role="listitem">
+                <i class="fab fa-js-square" aria-hidden="true"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item" data-aos="zoom-in" data-aos-delay="350" role="listitem">
+                <i class="fab fa-react" aria-hidden="true"></i>
+                <span>React</span>
+              </div>
+              <div class="skill-item" data-aos="zoom-in" data-aos-delay="400" role="listitem">
+                <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item" data-aos="zoom-in" data-aos-delay="450" role="listitem">
+                <i class="fab fa-html5" aria-hidden="true"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item" data-aos="zoom-in" data-aos-delay="500" role="listitem">
+                <i class="fab fa-node-js" aria-hidden="true"></i>
+                <span>Node.js</span>
+              </div>
+              <div class="skill-item" data-aos="zoom-in" data-aos-delay="550" role="listitem">
+                <i class="fab fa-git-alt" aria-hidden="true"></i>
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section live-projects-section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" id="projects-heading" data-aos="fade-up">Live Projects</h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+            Interactive demos of my latest work
+          </p>
+        </header>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-preview-container">
+              <iframe
+                src="https://your-live-project-link.com"
+                class="project-preview"
+                title="Live preview of My Live Project"
+                loading="lazy"
+                aria-label="Interactive preview of My Live Project">
+              </iframe>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">My Live Project</h3>
+              <p class="project-description">
+                An interactive web project with engaging UI/UX elements and seamless user experience.
+              </p>
+              <div class="project-tech" role="list" aria-label="Technologies used">
+                <span class="tech-tag" role="listitem">HTML</span>
+                <span class="tech-tag" role="listitem">CSS</span>
+                <span class="tech-tag" role="listitem">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://your-live-project-link.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/your-username/my-live-project" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-preview-container">
+              <iframe
+                src="https://codepen.io/trending"
+                class="project-preview"
+                title="Live preview of Portfolio Website"
+                loading="lazy"
+                aria-label="Interactive preview of Portfolio Website">
+              </iframe>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-description">
+                A responsive portfolio website built with modern web technologies, featuring smooth animations and optimized performance.
+              </p>
+              <div class="project-tech" role="list" aria-label="Technologies used">
+                <span class="tech-tag" role="listitem">HTML5</span>
+                <span class="tech-tag" role="listitem">CSS3</span>
+                <span class="tech-tag" role="listitem">JavaScript</span>
+                <span class="tech-tag" role="listitem">GSAP</span>
+              </div>
+              <div class="project-links">
+                <a href="https://your-portfolio-demo.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/your-username/portfolio" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-preview-container">
+              <iframe
+                src="https://css-tricks.com"
+                class="project-preview"
+                title="Live preview of E-commerce Platform"
+                loading="lazy"
+                aria-label="Interactive preview of E-commerce Platform">
+              </iframe>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">E-commerce Platform</h3>
+              <p class="project-description">
+                A full-featured e-commerce platform with shopping cart, payment integration, and admin dashboard.
+              </p>
+              <div class="project-tech" role="list" aria-label="Technologies used">
+                <span class="tech-tag" role="listitem">React</span>
+                <span class="tech-tag" role="listitem">Node.js</span>
+                <span class="tech-tag" role="listitem">MongoDB</span>
+                <span class="tech-tag" role="listitem">Stripe</span>
+              </div>
+              <div class="project-links">
+                <a href="https://your-ecommerce-demo.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/your-username/ecommerce-platform" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Timeline Section -->
+    <section class="section timeline-section" id="timeline" aria-labelledby="timeline-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" id="timeline-heading" data-aos="fade-up">Experience & Education</h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+            My journey in web development and design
+          </p>
+        </header>
+
+        <div class="timeline" role="list" aria-label="Professional timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="200" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="2025">2025 - Present</time>
+              <h3 class="timeline-title">Senior Frontend Developer</h3>
+              <div class="timeline-company">TechCorp Solutions</div>
+              <p class="timeline-description">
+                Leading frontend development initiatives, mentoring junior developers,
+                and architecting scalable web applications using React, TypeScript, and Node.js.
+                Improved application performance by 40% through optimization techniques.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item" data-aos="fade-left" data-aos-delay="300" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="2025">2025 - 2025</time>
+              <h3 class="timeline-title">Frontend Developer</h3>
+              <div class="timeline-company">Digital Innovations Inc.</div>
+              <p class="timeline-description">
+                Developed responsive web applications for various clients, implemented modern
+                UI/UX designs, and collaborated with backend teams to integrate APIs.
+                Successfully delivered 15+ projects on time and within budget.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="400" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="2024">2024 - 2025</time>
+              <h3 class="timeline-title">Junior Web Developer</h3>
+              <div class="timeline-company">StartupHub Technologies</div>
+              <p class="timeline-description">
+                Gained hands-on experience in web development, learned modern frameworks,
+                and contributed to multiple startup projects. Focused on creating
+                user-friendly interfaces and optimizing website performance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item" data-aos="fade-left" data-aos-delay="500" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="2023">2023 - 2025</time>
+              <h3 class="timeline-title">Bachelor of Computer Science</h3>
+              <div class="timeline-company">University of Technology</div>
+              <p class="timeline-description">
+                Graduated with honors, specializing in web technologies and software engineering.
+                Completed multiple projects in JavaScript, Python, and database management.
+                Active member of the coding club and hackathon participant.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 5 -->
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="600" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="2024">2024</time>
+              <h3 class="timeline-title">Web Development Bootcamp</h3>
+              <div class="timeline-company">CodeCamp Academy</div>
+              <p class="timeline-description">
+                Intensive 12-week program focusing on full-stack web development.
+                Learned modern frameworks, best practices, and industry standards.
+                Built multiple real-world projects and collaborated with fellow developers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" id="testimonials-heading" data-aos="fade-up">What Clients Say</h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+            Feedback from satisfied clients and colleagues
+          </p>
+        </header>
+
+        <div class="testimonials-container" data-aos="fade-up" data-aos-delay="200">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card active" role="tabpanel" aria-labelledby="testimonial-1">
+            <blockquote class="testimonial-quote">
+              "Working with codewithw3s was an absolute pleasure. Their attention to detail
+              and ability to translate our vision into a beautiful, functional website exceeded
+              our expectations. The project was delivered on time and the communication
+              throughout was excellent."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">SM</div>
+              <div class="testimonial-info">
+                <h4 id="testimonial-1">Sarah Mitchell</h4>
+                <p>CEO, InnovateTech</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card" role="tabpanel" aria-labelledby="testimonial-2" hidden>
+            <blockquote class="testimonial-quote">
+              "The level of professionalism and technical expertise demonstrated by CODEWITHW3S
+              is remarkable. They not only delivered a high-quality product but also provided
+              valuable insights that improved our overall digital strategy. Highly recommended!"
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">MJ</div>
+              <div class="testimonial-info">
+                <h4 id="testimonial-2">Michael Johnson</h4>
+                <p>Product Manager, DigitalFlow</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card" role="tabpanel" aria-labelledby="testimonial-3" hidden>
+            <blockquote class="testimonial-quote">
+              "I've worked with many developers over the years, but CODEWITHW3S stands out
+              for their creative problem-solving and commitment to excellence. The responsive
+              design and performance optimizations they implemented made a significant impact
+              on our user engagement."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">ER</div>
+              <div class="testimonial-info">
+                <h4 id="testimonial-3">Emily Rodriguez</h4>
+                <p>UX Director, CreativeStudio</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Navigation -->
+          <div class="testimonial-nav" role="tablist" aria-label="Testimonial navigation">
+            <button class="testimonial-dot active" role="tab" aria-selected="true" aria-controls="testimonial-1" data-testimonial="0">
+              <span class="sr-only">View testimonial 1</span>
+            </button>
+            <button class="testimonial-dot" role="tab" aria-selected="false" aria-controls="testimonial-2" data-testimonial="1">
+              <span class="sr-only">View testimonial 2</span>
+            </button>
+            <button class="testimonial-dot" role="tab" aria-selected="false" aria-controls="testimonial-3" data-testimonial="2">
+              <span class="sr-only">View testimonial 3</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Certifications & Badges -->
+
+        <section class="section" id="certifications">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Certifications & Badges</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Professional certifications and achievements
+                </p>
+
+                <div class="certifications-grid">
+                    <!-- LetsUpgrade - Full Stack Web Development -->
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="certification-icon">
+                            <img src="https://letsupgrade.in/favicon.ico" alt="LetsUpgrade Logo"
+                                style="width: 50px; height: 50px;" />
+                        </div>
+                        <h3 class="certification-title">Full Stack Web Development</h3>
+                        <p class="certification-issuer">LetsUpgrade</p>
+                        <p class="certification-date">Completed - 2024</p>
+                    </div>
+
+                    <!-- LetsUpgrade - Python & Data Science -->
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="certification-icon">
+                            <img src="https://letsupgrade.in/favicon.ico" alt="LetsUpgrade Logo"
+                                style="width: 50px; height: 50px;" />
+                        </div>
+                        <h3 class="certification-title">Python & Data Science</h3>
+                        <p class="certification-issuer">LetsUpgrade</p>
+                        <p class="certification-date">Ongoing - 2025</p>
+                    </div>
+
+                    <!-- LetsUpgrade - Power BI -->
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="certification-icon">
+                            <img src="https://letsupgrade.in/favicon.ico" alt="LetsUpgrade Logo"
+                                style="width: 50px; height: 50px;" />
+                        </div>
+                        <h3 class="certification-title">Power BI</h3>
+                        <p class="certification-issuer">LetsUpgrade</p>
+                        <p class="certification-date">Completed - 2024</p>
+                    </div>
+
+                    <!-- GeekforGeeks ML/AI Courses -->
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="certification-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/1024px-GeeksforGeeks.svg.png"
+                                alt="GeekforGeeks Logo" style="width: 50px; height: 50px;" />
+                        </div>
+                        <h3 class="certification-title">Machine Learning Basics</h3>
+                        <p class="certification-issuer">GeekforGeeks</p>
+                        <p class="certification-date">Completed - 2024</p>
+                    </div>
+
+
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="certification-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/1024px-GeeksforGeeks.svg.png"
+                                alt="GeekforGeeks Logo" style="width: 50px; height: 50px;" />
+                        </div>
+                        <h3 class="certification-title">Artificial Intelligence Basics</h3>
+                        <p class="certification-issuer">GeekforGeeks</p>
+                        <p class="certification-date">Completed - 2024</p>
+                    </div>
+
+                    <!-- New GFG Course Added -->
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="certification-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/1024px-GeeksforGeeks.svg.png"
+                                alt="GeekforGeeks Logo" style="width: 50px; height: 50px;" />
+                        </div>
+                        <h3 class="certification-title">Data Science Essentials</h3>
+                        <p class="certification-issuer">GeekforGeeks</p>
+                        <p class="certification-date">Completed - 2024</p>
+                    </div>
+                </div>
+
+                <div class="certifications-grid">
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="450">
+                        <div class="certification-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h3 class="certification-title">AWS Certified Developer</h3>
+                        <p class="certification-issuer">Amazon Web Services</p>
+                        <p class="certification-date">Valid until Dec 2024</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="certification-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3 class="certification-title">React Developer Certification</h3>
+                        <p class="certification-issuer">Meta (Facebook)</p>
+                        <p class="certification-date">Earned Nov 2024</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="certification-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3 class="certification-title">JavaScript Algorithms & Data Structures</h3>
+                        <p class="certification-issuer">freeCodeCamp</p>
+                        <p class="certification-date">Earned Sep 2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Let's discuss your next project
+                </p>
+
+                <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info">
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>codewithw3s@gmail.com</p>
+                                <a href="mailto:codewithw3s@gmail.com" class="contact-link">Send Email</a>
+                            </div>
+
+                        </div>
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 7324969404</p>
+                                <a href="tel:+91 7324969404" class="contact-link">Call Now</a>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="500">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Uttam Nagar, New Delhi (India)</p>
+                                <a href="https://www.google.com/maps/place/Sitapuri+Part+2,+Sitapuri,+Delhi,+110045/@28.5984779,77.0690274,14z/data=!4m16!1m9!3m8!1s0x390d04cab348b001:0xe7fb79e6f4eee8a6!2sSitapuri+Part+2,+Sitapuri,+Delhi,+110045!3b1!8m2!3d28.6114318!4d77.0780316!10e5!16s%2Fg%2F12hqhwps9!3m5!1s0x390d04cab348b001:0xe7fb79e6f4eee8a6!8m2!3d28.6114318!4d77.0780316!16s%2Fg%2F12hqhwps9?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank" class="contact-link">View on Map</a>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="600">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+91 7324969404</p>
+                                <a href="https://wa.me/917324969404" target="_blank" rel="noopener" class="contact-link">Chat on
+                                    WhatsApp</a>
+                                <img src="whatsapp.jpg" alt="" srcset="" height="400px" width="300px" style="border-radius: 9%; margin-top: 20px; margin-left: -65px; margin-right: 7px; margin-bottom: -211px;" >
+                              
+
+                            </div>  
+                          
+                        </div>
+                        
+                    <!-- Social Media Section -->
+                    <div class="contact-social" data-aos="fade-up" data-aos-delay="1200">
+                        <h3>Follow Me</h3>
+                        <div class="social-grid">
+                            <a href="https://github.com/codewithw3s" target="_blank" class="social-card"
+                                aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://twitter.com/codewithw3s" target="_blank" class="social-card"
+                                aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="https://instagram.com/codewithw3s" target="_blank" class="social-card"
+                                aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://youtube.com/codewithw3s" target="_blank" class="social-card"
+                                aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="https://codepen.io/codewithw3s" target="_blank" class="social-card"
+                                aria-label="CodePen">
+                                <i class="fab fa-codepen"></i>
+                                <span>CodePen</span>
+                            </a>
+                            <a href="https://dribbble.com/codewithw3s" target="_blank" class="social-card"
+                                aria-label="Dribbble">
+                                <i class="fab fa-dribbble"></i>
+                                <span>Dribbble</span>
+                            </a>
+
+                           
+                        </div>
+                         
+                    </div>
+                    <!-- <img src="bottom.jpg" alt="" srcset="" height="510px" width="361px" style="border-radius: 7%; margin-top: 12px; margin-left: 10px;"> -->
+                     <div></div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">CODEWITHW3S</div>
+                    <p class="footer-description">
+                        Passionate frontend developer creating beautiful, responsive,
+                        and user-friendly web experiences with modern technologies.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" style="--i: 0" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" style="--i: 1" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" style="--i: 2" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" style="--i: 3" aria-label="CodePen">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                        <a href="#" class="social-link" style="--i: 4" aria-label="Dribbble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#blog">Blog</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <a href="#">Web Development</a>
+                    <a href="#">UI/UX Design</a>
+                    <a href="#">Consulting</a>
+                    <a href="#">Maintenance</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 CODEWITHW3S. All rights reserved. Built with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+<!-- 📜 Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" 
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+</script>
+<script src="main.js"></script>
+
+<!-- 🚀 AOS Initialization -->
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+    mirror: false
+  });
+
+    // <!-- Element to contain animated typing -->
+ 
+</script>
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+  var typed = new Typed('#element', {
+    strings: [
+      '<i>Fullstack developer</i>.',
+      '<i>Machine Learning</i>.',
+      '<i>Data Science</i>.',
+      '<i>Web Designer</i>.',
+      '<i>UI/UX Designer</i>.',
+      '<i>Fullstack developer</i>.',
+    //   '<i>Open Source Contributor</i>.',
+      '<i>Prompt Engineer</i>.'
+    ],
+    typeSpeed: 45,
+    backSpeed: 20,       // optional: makes delete animation smoother
+    backDelay: 900,     // wait before deleting
+    loop: true           // this is the key line to make it repeat forever
+  });
+</script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(reg => console.log("✅ Service Worker registered"))
+      .catch(err => console.error("❌ Service Worker error", err));
+  }
+</script>
+ 
+
+</body>
+
+</html>
