@@ -1,0 +1,46 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Global Safety Net Default Deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Path Variable & ID Guard
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Rules for Contact Form Leads
+    match /leads/{leadId} {
+      allow create: if isValidId(leadId) 
+        && request.resource.data.name is string 
+        && request.resource.data.name.size() > 0 
+        && request.resource.data.name.size() <= 128
+        && request.resource.data.email is string 
+        && request.resource.data.email.size() > 0 
+        && request.resource.data.email.size() <= 128
+        && request.resource.data.message is string 
+        && request.resource.data.message.size() <= 5000
+        && request.resource.data.createdAt == request.time;
+      allow read, update, delete: if false; // Strict PII protection
+    }
+
+    // Rules for Newsletter Subscribers
+    match /subscribers/{subscriberId} {
+      allow create: if isValidId(subscriberId)
+        && request.resource.data.email is string 
+        && request.resource.data.email.size() > 0 
+        && request.resource.data.email.size() <= 128
+        && request.resource.data.createdAt == request.time;
+      allow read, update, delete: if false; // Strict PII protection
+    }
+
+    // Rules for Analytics Events
+    match /analytics_events/{eventId} {
+      allow create: if true;
+      allow read: if true;
+    }
+  }
+}

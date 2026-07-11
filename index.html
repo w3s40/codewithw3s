@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#013E37" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:title" content="Sumit Kumar | Frontend Developer & Data Analytics Professional" />
+    <meta property="og:description" content="Professional portfolio of Sumit Kumar, specializing in responsive React frontend development, technical SEO website audits, and business data analytics." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/src/assets/images/portfolio_og_image_1783623042913.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sumit Kumar | Frontend Developer & Data Analytics Professional" />
+    <meta name="twitter:description" content="Professional portfolio of Sumit Kumar, specializing in responsive React frontend development, technical SEO website audits, and business data analytics." />
+    <meta name="twitter:image" content="/src/assets/images/portfolio_og_image_1783623042913.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>Sumit Kumar | Frontend Developer & Data Analytics Professional</title>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('[Service Worker] Registered successfully:', reg.scope))
+            .catch(err => console.log('[Service Worker] Registration failed:', err));
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

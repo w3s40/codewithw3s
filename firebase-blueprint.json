@@ -1,0 +1,29 @@
+{
+  "collections": {
+    "leads": {
+      "fields": {
+        "name": "string",
+        "email": "string",
+        "projectType": "string",
+        "budget": "string",
+        "message": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    "subscribers": {
+      "fields": {
+        "email": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    "analytics_events": {
+      "fields": {
+        "eventType": "string",
+        "projectId": "string",
+        "timestamp": "timestamp",
+        "device": "string",
+        "locale": "string"
+      }
+    }
+  }
+}

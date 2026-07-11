@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #013E37;
+  --secondary: #FFEFB3;
+  --accent: #2A9D8F;
+  --bg-light: #FAFAF8;
+  --text-dark: #1E293B;
+  --card-bg: #FFFFFF;
+  --border-line: rgba(1, 62, 55, 0.1);
+  --accent-light: rgba(42, 157, 143, 0.08);
+}
+
+.dark {
+  --primary: #FFEFB3; /* Soft Gold for high visibility headings */
+  --secondary: #013E37; /* Background accents */
+  --accent: #2A9D8F;
+  --bg-light: #0B1311; /* Sleek dark teal-charcoal */
+  --text-dark: #E2E8F0; /* Slate text */
+  --card-bg: #111E1C; /* Dark card block */
+  --border-line: rgba(255, 239, 179, 0.15);
+  --accent-light: rgba(42, 157, 143, 0.2);
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-bg-light: var(--bg-light);
+  --color-text-dark: var(--text-dark);
+  --color-card-bg: var(--card-bg);
+  --color-border-line: var(--border-line);
+  --color-accent-light: var(--accent-light);
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: var(--color-text-dark);
+    background-color: var(--color-bg-light);
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+  }
+  
+  body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+}
+
+/* Custom styles for smooth experience */
+::selection {
+  background-color: #013E37;
+  color: #FFEFB3;
+}
+
+/* Custom scrollbar to match deep teal theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Smooth transit for everything themed */
+* {
+  transition-property: background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    color: #000000 !important;
+  }
+  
+  /* Hide standard web design, navigations, headers, and footer blocks */
+  #root > div:not(.print-only),
+  header,
+  footer,
+  main,
+  button,
+  .no-print {
+    display: none !important;
+  }
+  
+  /* Make the print-only container visible and occupy full print dimensions */
+  .print-only {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Force print processors to respect standard color-adjust parameters */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* Base state to hide print container on web screens */
+.print-only {
+  display: none;
+}
+
+/* Custom Cursor for Typewriter Animation */
+.typed-cursor {
+  color: var(--accent) !important;
+  font-weight: 900 !important;
+  animation: typed-blink 0.8s infinite !important;
+  text-shadow: 0 0 8px rgba(42, 157, 143, 0.4);
+  margin-left: 4px;
+}
+
+@keyframes typed-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
