@@ -7,7 +7,7 @@ export default defineConfig(() => {
   return {
     base: '/codewithw3s/', // 👈 Ye line add karein
     plugins: [react(), tailwindcss()],
-    resolve: {
+    resolve: {  
       alias: {
         '@': path.resolve(__dirname, '.'),
         react: path.resolve(__dirname, 'node_modules/react'),
