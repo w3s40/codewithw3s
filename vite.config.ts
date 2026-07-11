@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/analyticswithharry/', // 👈 Ye line add karein
+    base: '/codewithw3s/', // 👈 Ye line add karein
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
